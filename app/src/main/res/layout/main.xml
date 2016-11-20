@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/focusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:layout_marginLeft="15dp"
+            android:text="@string/focus_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/focus"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:width="100dp"
+            android:hint="@string/focus_hint"
+            android:background="@drawable/edit_background"
+            />
+
+        <TextView
+            android:id="@+id/f3Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:text="F3"
+            android:gravity="right"
+            android:textColor="@color/colorF3"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/f5Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:text="F5"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/r1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:layout_marginLeft="15dp"
+            android:text="@string/r1_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:width="100dp"
+            android:hint="@string/r1_hint"
+            android:background="@drawable/edit_background"/>
+
+        <TextView
+            android:id="@+id/f3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F3"
+            android:gravity="right"
+            android:textColor="@color/colorF3"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/f5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F5"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/r2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:layout_marginLeft="15dp"
+            android:text="@string/r2_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:width="100dp"
+            android:hint="@string/r2_hint"
+            android:background="@drawable/edit_background"/>
+
+        <TextView
+            android:id="@+id/f3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F3"
+            android:gravity="right"
+            android:textColor="@color/colorF3"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/f5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F5"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/r3Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:layout_marginLeft="15dp"
+            android:text="@string/r3_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:width="100dp"
+            android:hint="@string/r3_hint"
+            android:background="@drawable/edit_background"/>
+
+        <TextView
+            android:id="@+id/f3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F3"
+            android:gravity="right"
+            android:textColor="@color/colorF3"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/f5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F5"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/r4Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:layout_marginLeft="15dp"
+            android:text="@string/r4_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:width="100dp"
+            android:hint="@string/r4_hint"
+            android:background="@drawable/edit_background"/>
+
+        <TextView
+            android:id="@+id/f3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F3"
+            android:gravity="right"
+            android:textColor="@color/colorF3"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/f5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F5"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/r5Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:layout_marginLeft="15dp"
+            android:text="@string/r5_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:width="100dp"
+            android:hint="@string/r5_hint"
+            android:background="@drawable/edit_background"/>
+
+        <TextView
+            android:id="@+id/f3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F3"
+            android:gravity="right"
+            android:textColor="@color/colorF3"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/f5_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.70"
+            android:hint="F5"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/retraceClear"
+            android:text="@string/clear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/retraceBtn"
+            android:text="@string/retrace_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/ALabel"
+            android:layout_height="wrap_content"
+            android:text="@string/a_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"/>
+
+        <EditText
+            android:id="@+id/aValue"
+            android:layout_width="100dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:lines="1"
+            android:maxLines="1"
+            android:hint="@string/a_hint"
+            android:background="@drawable/edit_background"
+            android:layout_weight="1.0"
+            android:layout_height="32dp"/>
+
+        <TextView
+            android:id="@+id/BLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/bValue"
+            android:layout_width="100dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:lines="1"
+            android:maxLines="1"
+            android:hint="@string/b_hint"
+            android:background="@drawable/edit_background"
+            android:layout_weight="1"
+            android:layout_height="32dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/CLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/c_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.57"/>
+
+        <EditText
+            android:id="@+id/cValue"
+            android:layout_width="100dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:hint="@string/c_hint"
+            android:background="@drawable/edit_background"
+            android:layout_weight="0.58"
+            android:layout_height="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/copLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="COP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.28"/>
+
+        <TextView
+            android:id="@+id/cop"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:hint="@string/cop_hint"
+            android:layout_weight="0.82"
+            android:layout_height="22dp"/>
+
+        <TextView
+            android:id="@+id/opLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.52"/>
+
+        <TextView
+            android:id="@+id/op"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:hint="@string/op_hint"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/xopLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="XOP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.32"/>
+
+        <TextView
+            android:id="@+id/xop"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:hint="@string/xop_hint"
+            android:layout_weight="0.81"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/objectiveClear"
+            android:text="@string/clear_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/objectiveBtn"
+            android:text="@string/objective_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/seekBarLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/seek_label"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="25"/>
+
+    <TextView
+        android:id="@+id/compound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:hint="@string/confluence_agreement_hint"
+        android:textSize="18sp"/>
+
+</LinearLayout>

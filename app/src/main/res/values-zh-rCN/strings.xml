@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">帝纳波利点位计算器</string>
+    <string name="seek_label">叠加汇聚区域最大阈值: %1$d %%</string>
+    <string name="confluence_leading">叠加区域：\n</string>
+    <string name="agreement_leading">汇聚区域：\n</string>
+    <string name="confluence_agreement_hint">叠加汇聚区域</string>
+    <string name="clear_label">清除</string>
+    <string name="retrace_label">回撤分析</string>
+    <string name="objective_label">目标分析</string>
+    <string name="a_hint">A点</string>
+    <string name="b_hint">B点</string>
+    <string name="c_hint">C点</string>
+    <string name="cop_hint">COP值</string>
+    <string name="op_hint">OP值</string>
+    <string name="xop_hint">XOP值</string>
+    <string name="focus_hint">焦点</string>
+    <string name="r1_hint">弹点1</string>
+    <string name="r2_hint">弹点2</string>
+    <string name="r3_hint">弹点3</string>
+    <string name="r4_hint">弹点4</string>
+    <string name="r5_hint">弹点5</string>
+</resources>

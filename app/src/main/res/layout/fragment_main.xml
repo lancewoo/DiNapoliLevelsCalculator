@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.lance.dinapolilevelscalc.MainActivityFragment">
+
+    <TextView
+        android:id="@+id/focusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="焦点"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/focus"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:inputType="number|numberDecimal"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="focus"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:id="@+id/retraceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F3      F5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/focusLabel"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/focus" />
+
+    <TextView
+        android:id="@+id/r1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹点1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/focusLabel"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/r1"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:inputType="number|numberDecimal"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="reaction 1"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp"
+        android:layout_below="@+id/focus"
+        android:layout_alignBottom="@+id/r1Label" />
+
+    <TextView
+        android:id="@+id/r2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹点2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@id/r1Label"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/r2"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:inputType="number|numberDecimal"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="reaction 2"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp"
+        android:layout_below="@+id/r1"
+        android:layout_alignBottom="@+id/r2Label" />
+
+    <TextView
+        android:id="@+id/r3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹点3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@id/r2Label"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/r3"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:inputType="number|numberDecimal"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="reaction 3"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp"
+        android:layout_below="@+id/r2"
+        android:layout_alignBottom="@+id/r3Label" />
+
+    <TextView
+        android:id="@+id/r4Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹点4"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/r3Label"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/r4"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:inputType="number|numberDecimal"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="reaction 4"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@+id/r3"
+        android:layout_alignBottom="@+id/r4Label"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:id="@+id/r5Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹点5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/r4Label"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/r5"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:inputType="number|numberDecimal"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="reaction 5"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@+id/r4"
+        android:layout_alignBottom="@+id/r5Label"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:id="@+id/retrace1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="F3 F5"
+        android:layout_alignLeft="@+id/retraceLabel"
+        android:layout_alignStart="@+id/retraceLabel"
+        android:layout_alignRight="@+id/retraceLabel"
+        android:layout_alignEnd="@+id/retraceLabel"
+        android:layout_alignBottom="@+id/r1Label" />
+
+    <TextView
+        android:id="@+id/retrace2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="F3 F5"
+        android:layout_alignLeft="@+id/retrace1"
+        android:layout_alignStart="@+id/retrace1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/r2Label" />
+
+    <TextView
+        android:id="@+id/retrace3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="F3 F5"
+        android:layout_alignLeft="@+id/retrace2"
+        android:layout_alignStart="@+id/retrace2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/r3Label" />
+
+    <TextView
+        android:id="@+id/retrace4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="F3 F5"
+        android:layout_alignLeft="@+id/retraceLabel"
+        android:layout_alignStart="@+id/retraceLabel"
+        android:layout_alignRight="@+id/retraceLabel"
+        android:layout_alignEnd="@+id/retraceLabel"
+        android:layout_alignBottom="@+id/r4Label" />
+
+    <TextView
+        android:id="@+id/retrace5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="F3 F5"
+        android:layout_alignLeft="@+id/retraceLabel"
+        android:layout_alignStart="@+id/retraceLabel"
+        android:layout_alignRight="@+id/retraceLabel"
+        android:layout_alignEnd="@+id/retraceLabel"
+        android:layout_alignBottom="@+id/r5Label" />
+
+    <Button
+        android:id="@+id/retraceBtn"
+        android:text="回撤分析"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/ALabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A点"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@id/retraceBtn"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/aValue"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:inputType="number|numberDecimal"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="A点值"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp"
+        android:layout_alignBaseline="@+id/ALabel"
+        android:layout_alignBottom="@+id/ALabel"
+        android:layout_toRightOf="@+id/focusLabel"
+        android:layout_toEndOf="@+id/focusLabel" />
+
+    <TextView
+        android:id="@+id/BLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B点"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/aValue"
+        android:layout_alignLeft="@+id/retrace5"
+        android:layout_alignStart="@+id/retrace5" />
+
+    <EditText
+        android:id="@+id/bValue"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:inputType="number|numberDecimal"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="B点值"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp"
+        android:layout_alignBaseline="@+id/BLabel"
+        android:layout_alignBottom="@+id/BLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/CLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C点"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/bValue"
+        android:layout_alignRight="@+id/ALabel"
+        android:layout_alignEnd="@+id/ALabel" />
+
+    <EditText
+        android:id="@+id/cValue"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:inputType="number|numberDecimal"
+        android:lines="1"
+        android:maxLines="1"
+        android:width="100dp"
+        android:hint="C点值"
+        android:background="@android:drawable/editbox_background"
+        android:layout_width="100dp"
+        android:layout_alignBaseline="@+id/CLabel"
+        android:layout_alignBottom="@+id/CLabel"
+        android:layout_alignLeft="@+id/aValue"
+        android:layout_alignStart="@+id/aValue" />
+
+    <TextView
+        android:id="@+id/copLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COP"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/cValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/cop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="COP值"
+        android:layout_below="@+id/cValue"
+        android:layout_alignLeft="@+id/cValue"
+        android:layout_alignStart="@+id/cValue"
+        android:layout_alignRight="@+id/cValue"
+        android:layout_alignEnd="@+id/cValue" />
+
+    <TextView
+        android:id="@+id/opLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OP"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/cValue"
+        android:layout_alignLeft="@+id/BLabel"
+        android:layout_alignStart="@+id/BLabel" />
+
+    <TextView
+        android:id="@+id/op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="OP值"
+        android:layout_below="@+id/CLabel"
+        android:layout_alignLeft="@+id/bValue"
+        android:layout_alignStart="@+id/bValue"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/xopLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XOP"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/copLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/xop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal|bold"
+        android:hint="XOP值"
+        android:layout_below="@+id/cop"
+        android:layout_alignRight="@+id/cop"
+        android:layout_alignEnd="@+id/cop"
+        android:layout_alignLeft="@+id/cop"
+        android:layout_alignStart="@+id/cop" />
+
+    <Button
+        android:id="@+id/objectiveBtn"
+        android:text="目标分析"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xopLabel"
+        android:layout_alignLeft="@+id/CLabel"
+        android:layout_alignStart="@+id/CLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

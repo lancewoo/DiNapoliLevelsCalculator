@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">DiNapoli Levels Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="seek_label">Max Confluence Area: %1$d %%</string>
+    <string name="confluence_leading">Confluence Areas:\\n</string>
+    <string name="agreement_leading">Agreement Areas:\\n</string>
+    <string name="confluence_agreement_hint">Confluences and Agreements</string>
+    <string name="clear_label">Clear</string>
+    <string name="retrace_label">Retraces</string>
+    <string name="objective_label">Objectives</string>
+    <string name="focus_label">F</string>
+    <string name="r1_label">R1</string>
+    <string name="r2_label">R2</string>
+    <string name="r3_label">R3</string>
+    <string name="r4_label">R4</string>
+    <string name="r5_label">R5</string>
+    <string name="a_label">A</string>
+    <string name="b_label">B</string>
+    <string name="c_label">C</string>
+    <string name="a_hint">A input</string>
+    <string name="b_hint">B input</string>
+    <string name="c_hint">C input</string>
+    <string name="cop_hint">COP</string>
+    <string name="op_hint">OP</string>
+    <string name="xop_hint">XOP</string>
+    <string name="focus_hint">focus</string>
+    <string name="r1_hint">reaction 1</string>
+    <string name="r2_hint">reaction 2</string>
+    <string name="r3_hint">reaction 3</string>
+    <string name="r4_hint">reaction 4</string>
+    <string name="r5_hint">reaction 5</string>
+</resources>
